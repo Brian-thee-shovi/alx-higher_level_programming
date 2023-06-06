@@ -8,15 +8,20 @@ int check_cycle(listint_t *list)
 {
 	listint_t *line = list;
 	listint_t *other = list;
+	int cycle = 0;
 
-	if (!list)
-		return (0);
-	while (line && other && other->next)
+	while ((line && other) && other->next)
 	{
 		line = line->next;
-		other = other->next->next;
+		if (other->next || other->next->next)
+			other = other->next->next;
+		else
+			break;
 		if (line == other)
-			return (1);
+		{
+			cycle = 1;
+			break;
+		}
 	}
-	return (0);
+	return (cycle);
 }
