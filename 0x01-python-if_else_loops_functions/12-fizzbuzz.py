@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    for ram in range(1,101):
+    for ram in range(1, 101):
         if ram % 3 == 0 and ram % 5 == 0:
             print("FizzBuzz", end=' ')
         elif ram % 3 == 0:
