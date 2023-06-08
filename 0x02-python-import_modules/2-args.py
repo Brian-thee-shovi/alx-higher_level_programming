@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+import sys
+
 
 if __name__ == "__main__":
     """prints the number of and the list of its arguments"""
-    import sys
 
     list_1 = sys.argv
     func_len = len(list_1) - 1
