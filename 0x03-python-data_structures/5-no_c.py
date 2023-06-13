@@ -5,4 +5,4 @@ def no_c(my_string):
     for k in my_string:
         if k.lower() != 'c':
             other_string += k
-            return other_string
+    return other_string
