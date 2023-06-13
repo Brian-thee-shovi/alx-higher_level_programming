@@ -15,12 +15,13 @@ listint_t *reverse_listint(listint_t **head)
 
 	while (node)
 	{
-		next = node->next;
+		next_node = node->next;
 		node->next = prev_node;
 		prev_node = node;
-		node = next;
+		node = next_node;
 	}
 	*head = prev_node;
+	return (*head);
 }
 /**
  * is_palindrome - checks if singly list is a palindrome
