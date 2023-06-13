@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 
 def add_tuple(tuple_a=(), tuple_b=()):
-    if len(tuple_a) < 2:
-        if len(tuple_a) == 0:
-            tuple_a = 0, 0
-        else:
-            tuple_a = tuple_a[0], 0
-            if len(tuple_b) < 2:
-                if len(tuple_b) == 0:
-                    tuple-b = 0, 0
-                else:
-                    tuple_b = tuple_b[0], 0
-                    return (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
+    k = list(tuple_a)
+    j = list(tuple_b)
+
+    while len(k) < 2:
+        k.append(0)
+    while len(j) < 2:
+        j.append(0)
+
+    k = k[:2]
+    j = j[:2]
+    return (k[0] + j[0], k[1] + j[1])
