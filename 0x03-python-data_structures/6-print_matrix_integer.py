@@ -1,15 +1,10 @@
 #!usr/bin/python3
 
 def print_matrix_integer(matrix=[[]]):
-    rows = len(matrix)  # number of rows
-    columns = len(matrix[0])  # length of rows
-
-    if matrix == [[]]:
-        print()
-
-    for r in range(rows):
-        for c in range(columns):
-            if c == columns - 1:
-                print("{:d}".format(matrix[r][c]))
+    for k in range(len(matrix)):
+        for h in range(len(matrix[k])):
+            if h == len(matrix[k]) - 1:
+                print("{:d}".format(matrix[k][h]), end='')
             else:
-                print("{:d}".format(matrix[r][c]), end=" ")
+                print("{:d}".format(matrix[k][h]), end=' ')
+        print()
