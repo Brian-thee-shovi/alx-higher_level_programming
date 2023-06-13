@@ -10,18 +10,17 @@
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *node = *head;
-	listint_t *next_node;
+	listint_t *next = NULL;
 	listint_t *prev_node = NULL;
 
 	while (node)
 	{
-		next_node = node->next;
+		next = node->next;
 		node->next = prev_node;
 		prev_node = node;
-		node = next_node;
+		node = next;
 	}
 	*head = prev_node;
-	return (*head);
 }
 /**
  * is_palindrome - checks if singly list is a palindrome
