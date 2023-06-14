@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 /**
  * check_cycle - checks  if a singly linked list has a cycle in it.
  * @list: list being checked
@@ -10,7 +10,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *line = list;
 	listint_t *other = list;
-	int cycle = 0;
+	int result = 0;
 
 	while ((line && other) && other->next)
 	{
@@ -21,9 +21,9 @@ int check_cycle(listint_t *list)
 			break;
 		if (line == other)
 		{
-			cycle = 1;
+			result = 1;
 			break;
 		}
 	}
-	return (cycle);
+	return (result);
 }
