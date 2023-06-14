@@ -7,4 +7,4 @@ if __name__ == "__main__":
     total = 0
     for me in list_m:
         total = total + int(me)
-        print(total)
+    print(total)
