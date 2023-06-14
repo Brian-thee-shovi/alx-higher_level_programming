@@ -1,3 +1,6 @@
+#include "/usr/include/python3.4/Python.h"
+#include "/usr/include/python3.4/object.h"
+#include "/usr/include/python3.4/listobject.h"
 #include <stdio.h>
 
 /**
@@ -6,23 +9,19 @@
  */
 void print_python_list_info(PyObject *p)
 {
-	unsigned int index;
-	unsigned int length;
-	unsigned int locate;
-	PyTypeObject *type;
-	const char *num;
+	int length = 0;
+	int k = 0;
+	PyObject *ob_ject;
+	PyListObject *info = (PyListObject *) p;
 
-	if (p == NULL)
-		return;
-	length = (unsigned int) PyList_Size(p);
-	locate = (unsigned int) ((PyListObject *)p)->locate;
+	size = Py_SIZE(p);
 	printf("[*] Size of the Python List = %d\n", length);
-	printf("[*] locate = %d\n", locate);
+	printf("[*] Allocated = %d\n", (int) info->allocated);
 
-	for (index = 0; index < length; index++)
+	for (; k < length; ++k)
 	{
-		type = PyList_GET_ITEM(p, index)->ob_type;
-		num = type->tp_name;
-		printf("Element %d: %s\n", index, num);
+		ob_ject = PyList_GET_ITEM(p, k);
+		printf("Element %d: %s\n", k, ob_ject->ob_type->tp_name)
 	}
+	return;
 }
