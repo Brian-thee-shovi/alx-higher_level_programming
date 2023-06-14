@@ -4,4 +4,4 @@ def remove_char_at(str, n):
     for ram in range(len(str)):
         if ram != n:
             newstring = newstring + str[ram]
-            return newstring
+    return newstring
