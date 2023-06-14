@@ -13,7 +13,7 @@ if __name__ == "__main__":
     elif func_len == 1:
         print(func_len, "argument:")
         for ram in range(1, func_len + 1):
-            print("{:d}: {}"format(ram, list_1[ram]))
+            print("{:d}: {}".format(ram, list_1[ram]))
     elif func_len > 1:
         print(func_len, "arguments:")
         for zi in range(1, func_len + 1):
