@@ -10,8 +10,8 @@ def roman_to_int(roman_string):
     sol = 0
     previous_v = 0
 
-    for numeral i reversed(roman_string):
-        present_v = Rom_ umerall.get(numeral, 0)
+    for numeral in reversed(roman_string):
+        present_v = Rom_numeral.get(numeral, 0)
 
         if present_v >= previous_v:
             sol = sol + present_v
