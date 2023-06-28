@@ -11,4 +11,4 @@ def magic_calculation(a, b):
         except Exception:
             answer = b + a
             break
-        return answer
+    return answer
