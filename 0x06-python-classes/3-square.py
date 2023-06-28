@@ -23,7 +23,7 @@ class Square():
 
         self.__size = size
 
-        def area(self):
+    def area(self):
             """
             cal and return the current area of the square
             """
