@@ -29,17 +29,17 @@ class Square():
 
         self.__size = value
 
-        def area(self):
-            """
-            cal and return the area of a square
-            """
-            return self.__size ** 2
+    def area(self):
+        """
+        cal and return the area of a square
+        """
+        return self.__size ** 2
 
-        def my_print(self):
-            if self.__size == 0:
-                print()
-                return None
-            for v in range(self.__size):
-                for h in range(self.__size):
-                    print("#", end="")
-                print()
+    def my_print(self):
+        if self.__size == 0:
+            print()
+            return None
+        for v in range(self.__size):
+            for h in range(self.__size):
+                print("#", end="")
+            print()
