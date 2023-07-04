@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""
-Module reps documentation
-"""
+"""Module documentation"""
 
 
 Class Rectangle():
-    """Defines the Class Rectangles"""
+    """Represent the Class Rectangles"""
     pass
