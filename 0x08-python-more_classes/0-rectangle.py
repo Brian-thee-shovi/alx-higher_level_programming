@@ -2,6 +2,6 @@
 """Module documentation"""
 
 
-Class Rectangle():
+class Rectangle():
     """Represent the Class Rectangles"""
     pass
