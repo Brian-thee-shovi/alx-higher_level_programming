@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""define mod documentatio"""
+"""define mod documentation"""
 
 
 class Rectangle():
@@ -44,7 +44,7 @@ class Rectangle():
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            sol_
+            sol_ = ""
             for ki in range(self.__height - 1):
                 sol_ += ("#" * self.__width) + '\n'
             sol_ += "#" * self.__width
