@@ -47,8 +47,8 @@ class Rectangle():
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            sol_ = ""
+            solution = ""
             for ki in range(self.__height - 1):
-                sol_ += ("#" * sel.__width) + '\n'
-            sol_ += "#" * self.__width
-        return sol_
+                solution += ("#" * sel.__width) + '\n'
+            solution += "#" * self.__width
+        return solution
