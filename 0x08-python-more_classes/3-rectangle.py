@@ -32,7 +32,7 @@ class Rectangle():
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("heigh must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -49,6 +49,6 @@ class Rectangle():
         else:
             sol_ = ""
             for ki in range(self.__height - 1):
-                sol_ += ("#" * sel.__width) + '\n'
+                sol_ += ("#" * self.__width) + '\n'
             sol_ += "#" * self.__width
         return sol_
