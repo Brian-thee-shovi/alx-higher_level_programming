@@ -58,9 +58,9 @@ class Rectangle():
         return solution
 
     def __repr__(self):
-        hi = str(self.__height)
-        we = str(self.__width)
-        solution = "Rectangle(" + we ", " + hi + ")"
+        h = str(self.__height)
+        w = str(self.__width)
+        solution = "Rectangle(" + w ", " + h + ")"
         return solution
 
     def __del__(self):
