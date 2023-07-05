@@ -33,7 +33,7 @@ class Rectangle():
     @height.setter
     def height(self, value):
         if type(value) is not int:
-            raise TypeError("height must be >== 0")
+            raise TypeError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -70,7 +70,7 @@ class Rectangle():
     def __repr__(self):
         hi = str(self.__height)
         we = str(self.__width)
-        solution = "Rectagle(" + w + ", " + h + ")"
+        solution = "Rectagle(" + we + ", " + hi + ")"
         return solution
 
     def __del__(self):
