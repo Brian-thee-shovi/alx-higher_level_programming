@@ -2,7 +2,7 @@
 """Mods documentation for the rectangle shape"""
 
 
-class Rectagle():
+class Rectangle():
     """reps a rectangle"""
     number_of_instances = 0
     print_symbol = "#"
