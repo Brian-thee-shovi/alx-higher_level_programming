@@ -51,16 +51,16 @@ class Rectangle():
             return ""
         else:
             solution = ""
-            str_symbol = str(self.print_symbol)
+            _symbol = str(self.print_symbol)
             for ki in range(self.__height - 1):
-                solution += (str_symbol * self.__width) + '\n'
-            solution += str_symbol * self.__width
+                solution += (_symbol * self.__width) + '\n'
+            solution += _symbol * self.__width
         return solution
 
     def __repr__(self):
-        h = str(self.__height)
-        w = str(self.__width)
-        solution = "Rectangle(" + w ", " + h + ")"
+        hi = str(self.__height)
+        we = str(self.__width)
+        solution = "Rectangle(" + we + ", " + hi + ")"
         return solution
 
     def __del__(self):
