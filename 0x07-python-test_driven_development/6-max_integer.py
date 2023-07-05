@@ -11,10 +11,10 @@ def max_integer(list=[]):
     """
     if len(list) == 0:
         return None
-    resul_t = list[0]
-    ki = 1
-    while ki < len(list):
-        if list[ki] > resul_t:
-            resul_t = list[ki]
-        ki += 1
-    return resul_t
+    result = list[0]
+    i = 1
+    while i < len(list):
+        if list[i] > result:
+            result = list[i]
+        i += 1
+    return result
