@@ -3,7 +3,7 @@
 My name is Brian Shovi
 
 >>> say_my_name("", "Shovi")
-MY name is Shovi
+My name is Shovi
 
 >>> say_my_name("Brian")
 My name is Brian
