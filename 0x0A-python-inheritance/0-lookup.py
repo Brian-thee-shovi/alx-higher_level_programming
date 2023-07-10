@@ -5,12 +5,12 @@
 def lookup(obj):
     """func returns list of objects attribute"""
 
-    list_attr = []
-    list_meth = []
+    lista_ttribute = []
+    listm_ethod = []
 
-    for objects in dir (obj):
+    for objects in dir(obj):
         if callable(objects):
-            list_meth.append(objects)
+            listm_ethod.append(objects)
         else:
-            list_attr.append(objects)
-    return list_attr + list_meth
+            lista_ttribute.append(objects)
+    return lista_ttribute + listm_ethod
