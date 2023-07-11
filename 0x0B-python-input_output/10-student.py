@@ -15,12 +15,12 @@ class Student():
         """
         try:
             for element_t in attrs:
-                if type(element_t) is not string:
+                if type(element_t) is not str:
                     return self.__dict__
         except Exception:
             return self.__dict__
-        the_dict = dict()
+        d_dict = dict()
         for ky, v_value in self.__dict__.items():
             if ky in attrs:
-                the_dict[ky] = v_value
-        return the_dict
+                d_dict[ky] = v_value
+        return d_dict
