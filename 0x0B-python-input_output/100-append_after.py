@@ -12,7 +12,7 @@ def append_after(filename="", search_string="", new_string=""):
     text = ""
     with open(filename) as ki:
         for line in ki:
-            text = tet + line
+            text = text + line
             if search_string in line:
                 text = text + new_string
 
