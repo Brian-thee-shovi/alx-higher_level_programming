@@ -18,7 +18,8 @@
 >>> the_list.append(5)
 >>> the_list.append(5)
 >>> the_list.append(5)
->>> the_list.append(5))
+>>> the_list.append(5)
+>>> print(the_list)
 [5, 5, 5, 5, 5]
 >>> the_list.print_sorted()
 [5, 5, 5, 5, 5]
@@ -32,6 +33,16 @@
 []
 >>> print(the_list)
 []
+
+>>> the_list = MyList()
+>>> the_list.append(5)
+>>> print(the_list)
+[5]
+>>> the_list.print_sorted()
+[5]
+>>> print(the_list)
+[5]
+
 
 >>> the_list = MyList()
 >>> the_list.append(-7)
