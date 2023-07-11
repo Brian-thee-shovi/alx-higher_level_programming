@@ -19,8 +19,8 @@ class Student():
                     return self.__dict__
         except Exception:
             return self.__dict__
-        d_dict = dict()
+        the_dict = dict()
         for ky, v_value in self.__dict__.items():
             if ky in attrs:
-                d_dict[ky] = v_value
-        return d_dict
+                the_dict[ky] = v_value
+        return the_dict
