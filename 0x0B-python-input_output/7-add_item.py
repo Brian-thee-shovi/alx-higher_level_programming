@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-mods documentation for adding argrs to a 
+mods documentation for adding argrs to a
 python list and saving them in a file
 """
 
