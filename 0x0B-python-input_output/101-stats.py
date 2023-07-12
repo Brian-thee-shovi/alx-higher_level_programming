@@ -19,7 +19,7 @@ status_codes = {
         '500': 0
         }
 
-total_size = i = 0
+totalsize_t = i = 0
 
 
 def print_status():
@@ -35,7 +35,7 @@ try:
         spt_line = line.split()
         if len(spt_line) >= 2:
             status = spt_line[-2]
-            total_size += int(spt_line[-1])
+            totalsize_t += int(spt_line[-1])
             if status in status_codes:
                 status_codes[status] += 1
 
