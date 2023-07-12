@@ -32,10 +32,10 @@ def print_status():
 
 try:
     for line in stdin:
-        spt_line = line.split()
-        if len(spt_line) >= 2:
-            status = spt_line[-2]
-            totalsize_t += int(spt_line[-1])
+        split_line = line.split()
+        if len(split_line) >= 2:
+            status = split_line[-2]
+            totalsize_t += int(slipt_line[-1])
             if status in status_codes:
                 status_codes[status] += 1
 
