@@ -68,7 +68,7 @@ class Rectangle(Base):
 
     def validate_param(self, param, value):
         """this validates width, height, x and y"""
-        if type(param) is ot int:
+        if type(param) is not int:
             raise TypeError(value + ' must be an integer')
         if param <= 0 and value in ("width", "height"):
             raise ValueError(value + " must be > 0")
