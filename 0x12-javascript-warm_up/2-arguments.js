@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const { argv } = require( 'process');
+const { argv } = require('process');
 //func is used to import built-in process module in node.js
 //argv is destructures from the imported process
 //curly braces are part of destructuring syntax
