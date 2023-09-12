@@ -8,9 +8,9 @@ class Rectangle {
     }
   }
   print () {
-    for (let i = 0; i < this.height; i++) {
+    for (let k = 0; k < this.height; k++) {
       let row = '';
-      for (let j = 0; j < this.width; j++) {
+      for (let b = 0; b < this.width; b++) {
 	row += 'X';
       }
       console.log(row);
