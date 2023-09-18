@@ -2,13 +2,13 @@
 
 const { argv } = require('process');
 const square = parseInt(argv[2]);
-function factorial (d) {
-  if (isNaN(d)) {
+function factorial (n) {
+  if (isNaN(n)) {
     return 1;
-  } else if (d === 0 || d === 1) {
+  } else if (n === 0 || n === 1) {
     return 1;
   } else {
-    return d * factorial(d - 1);
+    return n * factorial(n - 1);
   }
 }
-consolle.log(factorial(square));
+console.log(factorial(square));
