@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-lists states with a name starting with N from the database,, connect with MySQLdb
+lists states with a name starting with N 
+from the database,, connect with MySQLdb
 """
 
 if __name == "__main__":
@@ -17,7 +18,8 @@ if __name == "__main__":
         )
 
     cursor = db.cursor()
-    cursor.execute("""SELECT * FROM states WHERE name LIKE BINARY 'N%'ORDER BY states.id ASC""")
+    cursor.execute("""SELECT * FROM states WHERE name LIKE 
+                   BINARY 'N%'ORDER BY states.id""")
     mydata = cursor.fetchall()
 
     for row in mydata:
