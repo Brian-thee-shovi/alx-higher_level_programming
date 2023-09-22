@@ -11,12 +11,12 @@ if __name__ == '__main__':
     db = MySQLdb.connect(
         host='localhost',
         port=3306,
-        usernm=sys.argv[1],
+        user=sys.argv[1],
         passwd=sys.argv[2],
-        datab=sys.argv[3]
+        db=sys.argv[3]
         )
 
-    cursor = datab.cursor()
+    cursor = db.cursor()
     cursor.execute("SELECT * FROM states ORDER BY states.id ASC;")
     mydata = cursor.fetchall()
 
@@ -24,4 +24,4 @@ if __name__ == '__main__':
         print(row)
 
     cursor.close()
-    datab.close()
+    db.close()
