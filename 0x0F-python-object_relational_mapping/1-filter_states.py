@@ -17,13 +17,13 @@ if __name == "__main__":
         db=sys.argv[3]
         )
 
-    cursor = db.cursor()
-    cursor.execute("""SELECT * FROM states WHERE name LIKE 
+    c = db.cursor()
+    c.execute("""SELECT * FROM states WHERE name LIKE 
                    BINARY 'N%'ORDER BY states.id""")
-    mydata = cursor.fetchall()
+    mydata = c.fetchall()
 
     for row in mydata:
         print(row)
 
-    cursor.close()
+    c.close()
     db.close()
