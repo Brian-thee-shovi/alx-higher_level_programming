@@ -4,7 +4,7 @@ lists states with a name starting with N
 from the database,, connect with MySQLdb
 """
 
-if __name == "__main__":
+if __name__ == "__main__":
 
     import MySQLdb
     import sys
