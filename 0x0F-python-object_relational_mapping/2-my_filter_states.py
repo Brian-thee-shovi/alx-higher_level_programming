@@ -19,7 +19,7 @@ if __name__ == "__main__":
     cur.excute("SELECT * FROM states WHERE name
                LIKE BINARY '{}'\ORDER BY states.id ASC".format(sys.argv[4]))
 
-    mydata = cur.fetchall
+    mydata = cur.fetchall()
 
     for row in mydata:
         print(row)
