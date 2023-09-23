@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-script takes an argument and displays all
-modules in the state innit
+This is a script takes an argument and displays all
+modules in the state table where name matches the argument
 """
 
 if __name__ == "__main__":
