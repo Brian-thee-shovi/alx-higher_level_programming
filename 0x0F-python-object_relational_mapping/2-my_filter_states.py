@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """
-lists states with a name starting with N
-from the database,, connect with MySQLdb
+script takes an argument and displays all
+modules in the state innit
 """
 
 if __name__ == "__main__":
-
     import MySQLdb
     import sys
 
@@ -16,14 +15,14 @@ if __name__ == "__main__":
         passwd=sys.argv[2],
         db=sys.argv[3]
         )
+    cur = db.cursor()
+    cur.excute("SELECT * FROM states WHERE name
+               LIKE BINARY '{}'\ORDER BY states.id ASC".format(sys.argv[4]))
 
-    c = db.cursor()
-    c.execute("""SELECT * FROM states WHERE name LIKE
-                   BINARY 'N%'ORDER BY states.id""")
-    mydata = c.fetchall()
+    mydata = cur.fetchall
 
     for row in mydata:
         print(row)
 
-    c.close()
-    db.close()
+    cur.close()
+    cur.close()
