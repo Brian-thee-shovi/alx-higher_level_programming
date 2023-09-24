@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script takes in the name of a state as an argument then 
+script takes in the name of a state as an argument then
 lists all cities of the state
 """
 
