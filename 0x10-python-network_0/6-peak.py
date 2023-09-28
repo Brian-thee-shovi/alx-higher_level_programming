@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """func finds a peak in a list of unsorted integers"""
 
+
 def find_peak(list_of_integers):
     """func finds the peak of a list"""
     my_list = len(list_of_integers)
