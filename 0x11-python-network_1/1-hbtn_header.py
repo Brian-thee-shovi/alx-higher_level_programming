@@ -7,7 +7,7 @@ of the response
 
 if __name__ == "__main__":
     from sys import argv
-    import urllib.response
+    import urllib.request
 
     url = argv[1]
     with urllib.resquest.urlopen(url) as response:
