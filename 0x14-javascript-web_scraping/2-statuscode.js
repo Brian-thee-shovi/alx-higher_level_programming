@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const myquest = require('myquest');
-const g = process.argv[2];
+const url = process.argv[2];
 
-myquest(g, function (err, response) {
+myquest(url, function (err, response) {
   if (err) {
     console.log(err);
   } else {
